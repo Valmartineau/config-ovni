@@ -1,0 +1,15 @@
+{
+  "_commentaire": "Exemple de .mcp.json à la racine d'un projet (portée project, commité). Les secrets passent par des variables d'environnement, jamais en clair.",
+  "mcpServers": {
+    "outil-local": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["outils/mon_serveur_mcp.py"]
+    },
+    "service-distant": {
+      "type": "http",
+      "url": "https://mcp.exemple.com/mcp",
+      "headers": { "Authorization": "Bearer ${MON_JETON}" }
+    }
+  }
+}

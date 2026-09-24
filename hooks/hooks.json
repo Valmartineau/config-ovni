@@ -1,0 +1,41 @@
+{
+  "_commentaire": "Bloc à FUSIONNER dans ~/.claude/settings.json (clé hooks). Sur Windows sans python3 : remplacer python3 par python. Chemins avec des /.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/obsidian_session_start.py",
+            "timeout": 5,
+            "statusMessage": "Check Obsidian..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/obsidian_daily.py",
+            "timeout": 10,
+            "statusMessage": "Journal Obsidian..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/garde_fou.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

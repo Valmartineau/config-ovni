@@ -1,0 +1,26 @@
+# <Nom du projet> — CLAUDE.md
+# (à la racine du dépôt, commité ; `/init` peut en proposer un premier jet)
+
+## En une phrase
+<Ce que fait le projet, pour qui.>
+
+## Lancer / tester / déployer
+```bash
+<commande d'installation>
+<commande de lancement>       # ex. npm run dev → http://localhost:3000
+<commande de test>            # ex. npm test
+```
+
+## Architecture (ce que le code ne dit pas)
+- <dossier> : <rôle>
+- <décision structurante et pourquoi>
+
+## Règles du projet
+- <ex. : les migrations ne se modifient jamais, on en ajoute une>
+- <ex. : tout texte visible passe par le fichier de traduction>
+
+## Pièges connus
+- <symptôme> → <cause> → <parade>
+
+## Ce qui est en cours / grisé
+- <fonctionnalité> : XXX_WIP, non validée bout en bout.

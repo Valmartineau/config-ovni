@@ -1,0 +1,69 @@
+{
+  "_commentaire": "Exemple de ~/.claude/settings.json. Fusionner avec l'existant, ne pas écraser. Pas de secret ici.",
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(npm test)"
+    ],
+    "deny": [
+      "Read(**/Dossier_Perso/**)",
+      "Edit(**/Dossier_Perso/**)",
+      "Write(**/Dossier_Perso/**)",
+      "Grep(**/Dossier_Perso/**)",
+      "Glob(**/Dossier_Perso/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/obsidian_session_start.py",
+            "timeout": 5,
+            "statusMessage": "Check Obsidian..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/obsidian_daily.py",
+            "timeout": 10,
+            "statusMessage": "Journal Obsidian..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/garde_fou.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "python3 ~/.claude/statusline.py",
+    "padding": 0,
+    "refreshInterval": 30
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "tui": "fullscreen",
+  "agents": {
+    "leftArrowOpensAgents": true
+  }
+}

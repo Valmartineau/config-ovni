@@ -1,0 +1,33 @@
+# Mémoire utilisateur — lue dans TOUTES mes sessions Claude Code
+# (à copier en ~/.claude/CLAUDE.md, puis remplir les <...>)
+
+## Qui je suis
+- <Prénom Nom>, <ce que je fais en une ligne : étudiant·e en …, projet de …>
+- Répondre en **français**. Phrases courtes, une idée par ligne, mots-clés en gras.
+- Réponse à la taille de la question : pas de tableau si trois lignes suffisent.
+
+## Restrictions absolues
+- INTERDIT : lire ou modifier `<dossier personnel à protéger>` (doublé par un `deny` dans settings.json).
+- Confirmation humaine avant tout envoi de mail, écriture Drive/Agenda, `git push`, publication.
+- Toujours COPIER, jamais déplacer un fichier source.
+
+## Méthode de travail (pipeline, dans l'ordre)
+1. **Comprendre d'abord** : tracer le flux réel de bout en bout avant de toucher au code.
+2. **Cause racine, pas symptôme** : chercher tous les appelants, corriger UNE fois la fonction partagée.
+3. **Simplicité ensuite** : le minimum qui résout le problème, rien de spéculatif.
+4. **Changements chirurgicaux** : ne toucher que ce qui trace vers la demande. Signaler le code mort, ne pas le supprimer sans accord.
+5. **Tracer les raccourcis** : tout raccourci assumé porte un commentaire `ponytail:` qui nomme le plafond ET le chemin d'upgrade.
+6. **Ne JAMAIS simplifier** : validation aux frontières de confiance, gestion d'erreur anti-perte de données, sécurité, accessibilité, et tout ce qui est explicitement demandé.
+7. **Vérifier avant de dire fini** : logique non triviale = UN check exécutable + exercer le vrai flux. Annoncer les résultats tels quels, échecs compris.
+8. **État visible = état réel** : non validé bout en bout = grisé « en cours » et inerte.
+
+## Réflexes
+- Un doute > 10 % sur l'objectif = une question, pas une improvisation.
+- Annoncer « ~X min » avant un gros chantier.
+- Sourcer chaque fait ; dater depuis l'horloge système (`date`).
+- Ne jamais nommer un client ou un concurrent dans un livrable qui sort.
+
+## Mes projets actifs (lire le CLAUDE.md local AVANT de travailler)
+| Projet | Emplacement |
+|---|---|
+| <nom> | `~/projets/<dossier>` |

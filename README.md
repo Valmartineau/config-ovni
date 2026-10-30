@@ -19,5 +19,6 @@ Puis dites à Claude : « installe le kit ».
 
 Page de présentation : https://www.ovniconseil.fr/github
 
-Licence : le skill `lisible` porte sa licence MIT. Le reste du kit est libre d'usage
-et de modification pour un usage pédagogique.
+Licence : CC BY-NC 4.0 — vous pouvez copier, modifier et partager le kit en citant
+OVNI Conseil, mais pas en faire un usage commercial. Le skill `lisible` reste sous
+licence MIT. Détails : `LICENSE`.

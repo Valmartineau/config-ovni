@@ -59,5 +59,6 @@ Le blog d'OVNI Conseil développe cette approche, cas concrets à l'appui :
 
 Parcourez-le après le tuto `09_methode.md` : les deux se répondent.
 
-Licence : le skill `lisible` porte sa licence MIT. Le reste du kit est libre
-d'usage et de modification pour un usage pédagogique.
+Licence : CC BY-NC 4.0 — vous pouvez copier, modifier et partager le kit en citant
+OVNI Conseil, mais pas en faire un usage commercial. Le skill `lisible` reste sous
+licence MIT. Détails : `LICENSE`.

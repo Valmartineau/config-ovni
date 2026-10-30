@@ -21,7 +21,7 @@ auto-service d'un contrôle RGPD : on vérifie soi-même, sans jargon juridique.
 - **Ne rien coder, ne rien modifier.** Chaque prompt commence par « ne modifie
   rien » / « ne code rien pour l'instant » : ce skill produit un diagnostic, pas
   un correctif. Toute mise en œuvre attend une validation humaine explicite.
-- **Ne jamais opposer local et cloud français.** On compare honnêtement les
+- **Ne jamais opposer local et cloud européen.** On compare honnêtement les
   options, on ne condamne pas le cloud : un service hébergé en Europe est une
   réponse légitime. Le prompt demande une comparaison, pas un verdict.
 - **Le RGPD n'impose PAS l'Europe.** Argumenter la *simplicité de conformité* du

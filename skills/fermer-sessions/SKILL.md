@@ -20,7 +20,7 @@ Deux familles, toutes deux visibles dans la liste de l'utilisateur :
 - **terminées** (`"status": "done"` dans `~/.claude/jobs/<id>/state.json`) : `ListAgents`
   ne les montre PAS, et elles ne répondent plus. Leur bilan se fait **par les fichiers**
   (agent en lecture seule) : fin de `timeline.jsonl` (fini ou interrompu ?), note dans
-  le dossier de notes de session du vault (voir `tuto/05_obsidian.md`), livrables seulement
+  `<vault>/06_Claude/sessions/` (là où `/session-note` écrit), livrables seulement
   dans `tmp/` sans copie ailleurs. Puis étapes 3-4.
 - Dossier sans `state.json` : jetable si son `tmp/` ne contient que des profils navigateur.
 
@@ -71,14 +71,14 @@ Ne ferme **que** les sessions qu'il a cochées.
 | Cas | Action |
 |---|---|
 | /bye déjà fait | rien |
-| Pas de note | SendMessage « lance /bye », en dictant les gestes de l'utilisateur à mettre dans « À faire » |
-| Fichier dans le tmp du job | lui faire **COPIER** d'abord vers un dossier de projet durable de l'utilisateur, puis /bye |
+| Pas de note | SendMessage « lance /bye » + gestes de l'utilisateur pour « À faire » |
+| Fichier dans le tmp du job | le faire **COPIER** vers un dossier de projet durable, puis /bye |
 
 Dans tout ordre de /bye, écrire : **n'envoie aucun mail, ne fusionne rien, ne
 lance aucun sudo** — ce sont les gestes de l'utilisateur.
 
 Attends la confirmation de chaque /bye (chemin de la note), puis vérifie sur disque :
-la présence de la note dans le dossier de notes de session du vault et des copies.
+la présence de la note dans `<vault>/06_Claude/sessions/` et des copies.
 
 ## 6. Fermer
 

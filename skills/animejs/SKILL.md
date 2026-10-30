@@ -18,8 +18,8 @@ Vérifié sur le paquet npm **animejs 4.5.0** (MIT, 26/09/2026) : exports, types
 | Site React déjà équipé de framer-motion | **framer-motion** — ne pas ajouter une 2ᵉ lib |
 | Simple fondu/hover | **CSS** `transition` — aucune lib |
 
-Pour le *pourquoi* du mouvement (durées, courbes, retenue) : skills
-`design-motion-principles` et `apple-design`. Ce skill-ci couvre le *comment*.
+Pour le *pourquoi* du mouvement (durées, courbes, retenue) : un skill de principes
+de mouvement, si vous en avez un. Ce skill-ci couvre le *comment*.
 
 ## Piège n° 1 : la syntaxe v3 est morte
 

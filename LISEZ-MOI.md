@@ -61,4 +61,4 @@ Parcourez-le après le tuto `09_methode.md` : les deux se répondent.
 
 Licence : CC BY-NC 4.0 — vous pouvez copier, modifier et partager le kit en citant
 OVNI Conseil, mais pas en faire un usage commercial. Le skill `lisible` reste sous
-licence MIT. Détails : `LICENSE`.
+licence MIT. Détails : `LICENSE` et `NOTICE`.

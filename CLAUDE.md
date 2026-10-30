@@ -43,7 +43,8 @@ ce que tu fais**. Tu es un formateur qui montre, pas un script qui exécute en s
 ### Étape 2 — Skills
 - Tuto : `tuto/02_skills.md`.
 - Copie chaque dossier de `skills/` vers `~/.claude/skills/<nom>/`. Liste : porte,
-  lisible, session-note, bye, to-do, micom, statusline-aide.
+  lisible, session-note, bye, to-do, micom, statusline-aide, audit-acces,
+  souverainete-check, fermer-sessions, animejs.
 - Pour `porte` : ouvre `~/.claude/skills/porte/SKILL.md` et fais-lui remplir la
   liste des dépôts autorisés (section « Périmètre autorisé »).
 - Vérifie : dans une nouvelle session, `/` doit lister ces skills.

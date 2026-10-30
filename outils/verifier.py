@@ -16,7 +16,8 @@ from pathlib import Path
 
 HOME = Path.home()
 CLAUDE = HOME / ".claude"
-SKILLS_ATTENDUS = ["porte", "lisible", "session-note", "bye", "to-do", "micom", "statusline-aide"]
+SKILLS_ATTENDUS = ["porte", "lisible", "session-note", "bye", "to-do", "micom", "statusline-aide",
+                   "audit-acces", "souverainete-check", "fermer-sessions", "animejs"]
 HOOKS_ATTENDUS = ["kit_config.py", "obsidian_session_start.py", "obsidian_daily.py", "garde_fou.py"]
 
 erreurs = 0

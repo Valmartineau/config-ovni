@@ -54,7 +54,7 @@ Les champs qui comptent :
 Dans le corps, `$ARGUMENTS` est remplacé par ce que vous avez tapé après `/nom`.
 `${CLAUDE_SKILL_DIR}` donne le dossier du skill (pour des fichiers annexes).
 
-## Les 7 skills du kit
+## Les 11 skills du kit
 
 | Skill | Ce qu'il fait | Qui le lance |
 |---|---|---|
@@ -65,6 +65,10 @@ Dans le corps, `$ARGUMENTS` est remplacé par ce que vous avez tapé après `/no
 | `/to-do` | Transforme une idée en objectif exécutable, avec critères vérifiables | vous |
 | `/micom` | Rôle de communication : sujet → post, avec votre charte et des garde-fous | vous |
 | `/statusline-aide` | Explique chaque segment de la status line | vous |
+| `/audit-acces` | Audite qui peut créer, lire, modifier, supprimer quoi : matrice et test croisé | vous |
+| `/souverainete-check` | Cartographie ce qui sort de votre périmètre et ce dont l'appli dépend | vous |
+| `/fermer-sessions` | Ferme les sessions en arrière-plan après un bilan d'état de chacune | vous seul |
+| `/animejs` | Écrit du code anime.js v4 sans syntaxe v3, avec prefers-reduced-motion | vous ou Claude |
 
 Lisez-les. Ils sont courts, et ce sont des **exemples de ce qu'un bon skill contient** :
 un déclencheur clair, un déroulé numéroté, des garde-fous, un self-check.

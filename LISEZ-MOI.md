@@ -22,11 +22,13 @@ Pas encore Claude Code sur votre machine ? Lisez d'abord `tuto/00_demarrer.md`.
 | `tuto/` | Le cours, pas à pas, un fichier par notion (skills, hooks, MCP, Obsidian, Google, sessions, sous-agents, mémoire, `claude -p`, règles…) |
 | `outils/verifier.py` | **L'auto-diagnostic** : ✅ / ❌ et la commande qui répare. À relancer à tout moment |
 | `agents/` | Un sous-agent relecteur, lecture seule, prêt à copier dans `~/.claude/agents/` |
-| `skills/` | 7 skills prêts à copier dans `~/.claude/skills/` |
+| `skills/` | 11 skills prêts à copier dans `~/.claude/skills/` |
 | `hooks/` | 3 hooks Python + le bloc JSON à fusionner dans `settings.json` |
 | `statusline/` | Une status line lisible (contexte, quota, session, notes) |
 | `modeles/` | Gabarits : CLAUDE.md utilisateur et projet, settings, MCP, charte Micom |
 | `vault/` | Squelette d'un vault Obsidian qui parle avec Claude Code |
+
+Le skill `dys` (profil de lecture dyslexie) vit dans son propre dépôt : https://github.com/Valmartineau/skill-dys
 
 ## Ordre de lecture conseillé
 

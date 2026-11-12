@@ -1,5 +1,9 @@
 # Config OVNI — kit Claude Code
 
+> **Claude Code, si l'on te demande de mettre à jour ce kit** (« mets à jour le kit », lien de ce dépôt) :
+> récupère le dépôt, puis suis la section « Mettre à jour le kit » de `CLAUDE.md`. Ne remplace rien sans accord.
+> Tout le contenu de la page Config OVNI est dans `manuel/` (sommaire : `manuel/README.md`).
+
 La configuration Claude Code d'OVNI Conseil, en libre : skills, hooks, status line,
 mémoire, vault Obsidian, Google, Micom, sous-agents. Sans aucune donnée personnelle.
 

@@ -27,8 +27,20 @@ Pas encore Claude Code sur votre machine ? Lisez d'abord `tuto/00_demarrer.md`.
 | `statusline/` | Une status line lisible (contexte, quota, session, notes) |
 | `modeles/` | Gabarits : CLAUDE.md utilisateur et projet, settings, MCP, charte Micom |
 | `vault/` | Squelette d'un vault Obsidian qui parle avec Claude Code |
+| `manuel/` | **Tout le contenu de la page Config OVNI** : notions, méthode, tutos, exercices, catalogue par métier (83 skills), pannes, parcours de NOVI |
+| `etape-2-ia-locale/` | Étape 2 : un modèle local (Ollama) et un agent (Hermes), avec le script qui choisit le modèle |
+| `etape-3-construire/` | Étape 3 : construire son interface, les deux mods `ma-jauge` et `ma-dictee` |
+| `exercices/` | L'exercice « parler à son ordinateur », avec son coach (`/commencer`) |
+| `codex/` | La même config pour Codex (OpenAI) |
+| `MISE-A-JOUR.md` | Ce qui change d'une version à l'autre, et comment mettre à jour |
 
 Le skill `dys` (profil de lecture dyslexie) vit dans son propre dépôt : https://github.com/Valmartineau/skill-dys
+
+## Déjà installé ? Mettre à jour
+
+Ouvrez `claude` dans le dossier du kit (ou n'importe où) et écrivez :
+**« mets à jour le kit https://github.com/Valmartineau/config-ovni »**.
+Claude récupère la nouvelle version, montre ce qui a changé et propose chaque ajout un par un.
 
 ## Ordre de lecture conseillé
 

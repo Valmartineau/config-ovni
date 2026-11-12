@@ -22,6 +22,38 @@ ce que tu fais**. Tu es un formateur qui montre, pas un script qui exécute en s
    de l'étudiant à cette étape précise.
 6. Réponds en **français**, phrases courtes, mots-clés en gras.
 
+## Le manuel complet est dans le dépôt
+
+Tout ce que montre la page Config OVNI (réservée par un code) est dans `manuel/`,
+`etape-2-ia-locale/`, `etape-3-construire/` et `exercices/`. Sommaire : `manuel/README.md`.
+Pour toute question sur la config, lis d'abord la fiche concernée : tu en sais alors autant
+que la personne qui a accès à la page.
+
+## Mettre à jour le kit (déjà installé)
+
+Déclencheurs : « mets à jour le kit », « mise à jour Config OVNI », ou le lien
+`https://github.com/Valmartineau/config-ovni` collé dans la conversation.
+
+1. **Récupérer la nouvelle version**, avec accord :
+   - dans un clone git du kit : `git pull` ;
+   - sinon : `git clone https://github.com/Valmartineau/config-ovni.git ~/config-ovni-maj`
+     (ou le zip `https://github.com/Valmartineau/config-ovni/archive/refs/heads/main.zip`),
+     puis travaille depuis ce dossier.
+2. **Dire ce qui a changé** : lis `MISE-A-JOUR.md` (journal des versions) et la version
+   installée dans `~/.claude/kit.json` (clé `version_kit`, absente = première installation
+   avant le 12/11/2026). Résume en trois lignes, sans jargon.
+3. **Comparer, élément par élément** : chaque `skills/<nom>/` avec `~/.claude/skills/<nom>/`,
+   `hooks/*.py` avec `~/.claude/hooks/`, `statusline/statusline.py`, `agents/`. Classe en
+   **nouveau**, **modifié**, **identique**. Pour un modifié, montre le diff en clair.
+4. **Une proposition à la fois**, avec accord. Avant de remplacer un fichier : copie datée
+   (`<nom>.bak-AAAAMMJJ-HHMM`). Un fichier que la personne a modifié elle-même (différent
+   de l'ancienne ET de la nouvelle version du kit) : ne remplace pas, propose une fusion.
+5. **Jamais touchés sans demande explicite** : `~/.claude/CLAUDE.md`, la mémoire, le vault,
+   `settings.json` hors de la clé ajoutée par le kit.
+6. **Les nouveautés facultatives** (étapes 2 et 3, exercices) : présente-les, n'installe rien d'office.
+7. **Clore** : écris la version installée dans `~/.claude/kit.json` (`"version_kit": "<date du
+   journal>"`, sans effacer la clé `vault`), puis relance `python3 outils/verifier.py`.
+
 ## Plan d'installation (dans cet ordre)
 
 ### Étape 0 — État des lieux
@@ -107,12 +139,23 @@ ce que tu fais**. Tu es un formateur qui montre, pas un script qui exécute en s
   se dérègle). Montre `claude agents` et la touche ← sur invite vide. N'active pas
   `worktree.bgIsolation: "none"` sans expliquer ce que l'isolation protège.
 
+### Étape 9 quater — L'IA locale (optionnel)
+- Fiche : `etape-2-ia-locale/LISEZ-MOI.md`. Commence par `python3 etape-2-ia-locale/choisir-modele.py`
+  (il mesure la machine, ne télécharge rien) et propose la ligne de la grille.
+- Préviens : de 10 à 30 Go de disque, et des réponses lentes sous 32 Go de mémoire.
+
+### Étape 9 quinquies — Construire son interface (optionnel)
+- Fiche : `etape-3-construire/LISEZ-MOI.md`. Fais lire `hooks/register.tsx` de chaque mod
+  avant de le charger. Dis pour chaque geste ce qui sort de la machine.
+
 ### Étape 10 — Bilan
 - Relance `python3 outils/verifier.py` : tout doit être ✅ hors lignes optionnelles.
   Un ❌ qui reste = on le corrige maintenant, pas « plus tard ».
 - Récapitule ce qui est installé, où, et comment le désinstaller (chaque tuto a une
   section « Retirer »). Propose `tuto/12_parcours-premiere-heure.md` comme prochaine
   étape, et `tuto/11_pannes.md` comme réflexe en cas de problème.
+- Écris la version du kit installée dans `~/.claude/kit.json` (clé `version_kit` = la date
+  la plus récente de `MISE-A-JOUR.md`), sans effacer la clé `vault`.
 
 ## Ce que tu ne fais pas
 - Tu n'installes pas Claude Code lui-même s'il est déjà là (`tuto/00_demarrer.md`

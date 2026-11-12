@@ -1,0 +1,1 @@
+{ "name": "ma-dictee", "version": "0.1.0", "description": "Dictée, lecture et agent local, sans rien envoyer : whisper.cpp, voix du système, Hermes", "types": "./types/index.d.ts" }

@@ -1,0 +1,1 @@
+{ "name": "ma-jauge", "version": "0.1.0", "description": "Contexte et quotas au-dessus de l'invite, alerte à 85 %", "types": "./types/index.d.ts" }

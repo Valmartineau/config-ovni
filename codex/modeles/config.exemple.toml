@@ -1,0 +1,32 @@
+# ~/.codex/config.toml : modèle commenté (Config OVNI pour Codex).
+# Ne copiez pas tout : reportez seulement les lignes que vous comprenez.
+# Aucun secret ici : la connexion est gardée par Codex, pas dans ce fichier.
+
+# Codex demande avant ce qui sort du cadre.
+approval_policy = "on-request"
+# Il écrit dans le projet ouvert, pas ailleurs.
+sandbox_mode = "workspace-write"
+
+# Taille maximale lue dans les AGENTS.md (32 Ko par défaut).
+# project_doc_max_bytes = 32768
+# Lire aussi CLAUDE.md quand AGENTS.md manque (un seul fichier pour les deux outils).
+# project_doc_fallback_filenames = ["CLAUDE.md"]
+
+[features]
+# Hooks actifs (par défaut). Mettre false pour tous les couper.
+hooks = true
+# Mémoire entre sessions : coupée par défaut. Fichiers locaux dans ~/.codex/.
+# memories = true
+
+# Status line : se règle avec la commande /statusline, qui écrit ici.
+# [tui]
+# status_line = [...]
+
+# Un serveur MCP, un seul à la fois, après les trois questions
+# (où vont mes données, qui les garde, comment je repars sans lui).
+# [mcp_servers.context7]
+# command = "npx"
+# args = ["-y", "@upstash/context7-mcp"]
+#
+# [mcp_servers.notion]
+# url = "https://mcp.notion.com/mcp"

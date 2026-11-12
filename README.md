@@ -17,6 +17,10 @@ claude
 
 Puis dites à Claude : « installe le kit ».
 
+**Vous utilisez Codex (OpenAI) ?** La même configuration, adaptée, est dans `codex/` :
+commencez par `codex/LISEZ-MOI.md` et `codex/INVENTAIRE.md`. Elle est régénérée depuis
+ce kit par `python3 outils/vers_codex.py`.
+
 Page de présentation : https://www.ovniconseil.fr/github
 
 Licence : CC BY-NC 4.0 — vous pouvez copier, modifier et partager le kit en citant

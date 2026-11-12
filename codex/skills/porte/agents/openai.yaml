@@ -1,0 +1,3 @@
+# Ce skill ne se lance que si l'utilisateur l'appelle ($porte).
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,30 @@
+# Règles de commandes Codex (Config OVNI). À copier dans ~/.codex/rules/, puis redémarrer Codex.
+# Double le hook garde_fou.py : ici, c'est Codex lui-même qui refuse.
+# ponytail: une règle compare le DÉBUT de la commande. Plafond : `git push origin main --force`
+# (option à la fin) passe la règle ; le hook garde_fou.py le rattrape. Upgrade : une règle par ordre d'options.
+
+prefix_rule(
+    pattern = ["git", "push", "--force"],
+    decision = "forbidden",
+    justification = "Le push forcé reste un geste humain.",
+    match = ["git push --force origin main"],
+    not_match = ["git push origin main"],
+)
+
+prefix_rule(
+    pattern = ["git", "push", "-f"],
+    decision = "forbidden",
+    justification = "Le push forcé reste un geste humain.",
+)
+
+prefix_rule(
+    pattern = ["rm", "-rf", "/"],
+    decision = "forbidden",
+    justification = "Effacement de la racine.",
+)
+
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "prompt",
+    justification = "Publier du code : Codex demande d'abord.",
+)

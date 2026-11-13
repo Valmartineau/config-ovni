@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 2ee80b0). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
 
 # 7. Le catalogue selon votre métier
 

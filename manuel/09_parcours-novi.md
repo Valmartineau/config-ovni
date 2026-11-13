@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 2ee80b0). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
 
 # 9. Le parcours guidé de NOVI, en texte
 
@@ -110,11 +110,11 @@ Vous êtes sur quel ordinateur ?
 - Mac ou Linux : Très bien. Pour ouvrir le terminal sur Mac : appuyez sur Commande et Espace, écrivez terminal, puis entrée.
 - Windows : Très bien. Ouvrez le menu Démarrer, écrivez PowerShell, et appuyez sur entrée. Il vous faudra aussi Git for Windows : le lien arrive à l'étape 1.
 
-**Je reste là : Un problème ? Copiez-moi l'écran**
+**Je reste là : Un problème ? Un bouton**
 
-Si quelque chose bloque, cliquez sur J'ai un problème, et copiez-moi ce que votre ordinateur affiche. Je vous dirai quoi essayer.
+Si quelque chose bloque, cliquez sur J'ai un problème. Je vous montre quoi essayer.
 
-**Étape 1 : Installer Claude Code**
+**Geste 1 : Installer Claude Code**
 
 Ouvrez votre terminal. Copiez cette commande, collez-la, puis appuyez sur entrée. Dites-moi quand c'est fait.
 
@@ -130,7 +130,7 @@ Windows :
 irm https://claude.ai/install.ps1 | iex
 ```
 
-**Étape 2 : Vérifier**
+**Geste 2 : Vérifier**
 
 Vérifions. La première commande doit vous donner un numéro de version.
 
@@ -141,7 +141,7 @@ claude --version
 claude doctor
 ```
 
-**Étape 3 : Récupérer le kit, se connecter**
+**Geste 3 : Récupérer le kit, se connecter**
 
 Maintenant, le kit. Ces commandes le récupèrent, et lancent Claude dedans. La première fois, votre navigateur s'ouvre : connectez-vous avec votre compte Claude, puis revenez au terminal.
 
@@ -171,7 +171,7 @@ claude
 
 Sur Mac, si le système propose d'installer des outils de développement, acceptez, puis relancez la commande.
 
-**Étape 4 : Lui demander de conduire**
+**Geste 4 : Lui demander de conduire**
 
 Dans Claude, écrivez simplement : installe le kit. Il fait une étape à la fois, et il attend votre accord. Prenez le temps, je vous attends.
 
@@ -181,7 +181,7 @@ Mac :
 installe le kit
 ```
 
-**Étape 5 : Contrôler**
+**Geste 5 : Contrôler**
 
 Pour finir, le vérificateur. Tout doit être validé, sauf les lignes facultatives.
 
@@ -223,15 +223,15 @@ Avant d'y entrer, chaque élément est nettoyé, et un contrôle automatique doi
 
 ## La suite
 
-**La première heure : Six exercices de dix minutes**
+**La suite : Six exercices, puis les étapes 2 à 5**
 
-Pour finir, six exercices de dix minutes vous attendent dans le manuel. Si vous avez un doute, écrivez-moi. À vous de jouer.
+Pour finir l'étape 1, six exercices de dix minutes vous attendent dans le manuel. Ensuite, quatre étapes suivent : votre persona, une intelligence artificielle sur votre machine, votre interface, et un RAG pour interroger vos documents. Le menu du manuel vous montre où vous en êtes : cochez chaque étape quand elle est faite. À vous de jouer.
 
 ## IA locale
 
 **IA locale : Un modèle qui tourne chez vous**
 
-Deuxième étape : une intelligence artificielle qui tourne sur votre ordinateur. Vos questions ne quittent plus la machine.
+Troisième étape : une intelligence artificielle qui tourne sur votre ordinateur. Vos questions ne quittent plus la machine.
 
 **Deux pièces : Ollama fait tourner, Hermes agit**
 
@@ -260,7 +260,7 @@ Combien de mémoire avez-vous ? Je vous donne le modèle qui va avec.
 - 32 Go : Vous pouvez prendre le modèle de notre serveur de référence. Il est affiché à l'écran.
 - 48 Go ou plus : Vous pouvez prendre le plus capable de la grille. Il est affiché à l'écran.
 
-**Étape 1 : Installer Ollama**
+**Geste 1 : Installer Ollama**
 
 Ouvrez votre terminal, copiez cette commande, puis appuyez sur entrée. Dites-moi quand c'est fait.
 
@@ -278,7 +278,7 @@ irm https://ollama.com/install.ps1 | iex
 
 Sur Mac et Windows, Ollama s'ouvre ensuite comme une application. Elle doit rester ouverte.
 
-**Étape 2 : Télécharger le modèle**
+**Geste 2 : Télécharger le modèle**
 
 Maintenant, le modèle. Le téléchargement prend quelques minutes. C'est la seule fois où il passe par internet.
 
@@ -288,7 +288,7 @@ Mac :
 ollama pull {m}
 ```
 
-**Étape 3 : Lui donner de la place pour travailler**
+**Geste 3 : Lui donner de la place pour travailler**
 
 L'étape importante. Par défaut, le modèle garde très peu de texte en tête, et un agent en a besoin de beaucoup. Ces deux lignes créent une copie du modèle, avec assez de mémoire de travail.
 
@@ -308,7 +308,7 @@ ollama create agent-local -f Modelfile
 
 Vérifiez avec ollama list : agent-local doit apparaître.
 
-**Étape 4 : Installer Hermes**
+**Geste 4 : Installer Hermes**
 
 Place à l'agent. Copiez cette commande. Si l'installation vous pose des questions, choisissez un point d'accès personnalisé. Puis fermez et rouvrez le terminal.
 
@@ -324,7 +324,7 @@ Windows :
 iex (irm https://hermes-agent.nousresearch.com/install.ps1)
 ```
 
-**Étape 5 : Brancher Hermes sur votre modèle**
+**Geste 5 : Brancher Hermes sur votre modèle**
 
 Ces quatre lignes disent à Hermes de parler à votre modèle, sur votre machine, et à personne d'autre.
 
@@ -337,7 +337,7 @@ hermes config set model.default agent-local
 hermes config set model.context_length 65536
 ```
 
-**Étape 6 : Le premier bonjour**
+**Geste 6 : Le premier bonjour**
 
 Testons. Hermes doit se présenter en une phrase. La deuxième commande doit montrer votre modèle en mémoire.
 
@@ -350,4 +350,4 @@ ollama ps
 
 **Votre agent : Tapez hermes pour lui parler**
 
-Votre agent tourne chez vous. Tapez hermes pour lui parler. Le manuel dit ce qui sort encore de la machine, et comment tout retirer.
+Votre agent tourne chez vous. Tapez hermes pour lui parler. L'étape 3 est faite. La suite, c'est l'étape 4 : construire votre interface, juste après dans le manuel.

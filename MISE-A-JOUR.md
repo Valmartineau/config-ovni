@@ -15,6 +15,16 @@ Vous aviez cloné le kit avec git ? Ouvrez `claude` dans ce dossier et dites
 
 ## Journal des versions
 
+### 2026-11-13 : le mode auto
+
+- **`tuto/00_demarrer.md`** : les modes de permission, et le **mode auto**, devenu le mode
+  de départ de Claude Code. Ce qu'il bloque, ce qu'il laisse passer (dont le `git push`),
+  et la règle à ajouter pour garder la question avant un push.
+- **Exercice 1** (`tuto/12_parcours-premiere-heure.md`) : il se fait en mode manuel.
+- **Glossaire** : entrée « Mode auto ».
+
+Rien à installer. Aucun de vos réglages n'est modifié.
+
 ### 2026-11-12 : le manuel complet dans le dépôt
 
 - **`manuel/`** : tout le contenu de la page Config OVNI, en fiches texte. Notions, méthode,

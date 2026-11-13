@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 2ee80b0). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
 
 # 1. Les notions
 
@@ -16,7 +16,7 @@ Claude Code est un agent dans votre terminal. Il repart de zéro à chaque sessi
 ### Le programme exécute
 
 - **Hook** (Un automatisme garanti) : Une commande lancée par Claude Code sur un événement. Le modèle ne peut pas l'oublier. C'est la bonne place pour un journal ou une interdiction. Où : `settings.json, clé hooks`.
-- **Permissions** (Allow et deny) : Ce que Claude peut faire sans demander, et ce qu'il ne pourra jamais faire. La règle deny gagne toujours. Où : `settings.json, clé permissions`.
+- **Permissions** (Allow et deny) : Ce que Claude peut faire sans demander, et ce qu'il ne pourra jamais faire. La règle deny gagne toujours, dans tous les modes, y compris le mode auto. Où : `settings.json, clé permissions`.
 - **Status line** (L'état, sous vos yeux) : La ligne du bas : modèle, contexte, quota. Un script reçoit l'état de la session et l'affiche. Où : `~/.claude/statusline.py`.
 
 ### Un autre acteur travaille

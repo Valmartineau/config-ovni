@@ -12,6 +12,9 @@
   modèle. Un serveur MCP = une liste de fonctions décrites. Transport stdio (local) ou http.
 - **Marketplace** : catalogue de plugins, souvent un dépôt git.
 - **Plugin** : paquet versionné de skills + hooks + agents + MCP.
+- **Mode auto** : mode de permission où un second modèle, le classifieur, examine chaque
+  action à votre place et bloque ce qui est risqué. Mode de départ depuis Claude Code 2.1.283.
+  `Maj+Tab` revient au mode manuel. Voir `tuto/00_demarrer.md`.
 - **Permission (allow / deny)** : règles dans `settings.json`. `deny` gagne toujours.
 - **Porte** (skill du kit) : autonomie bornée ; Claude code seul dans un worktree, sans
   réseau ni action sortante, et attend votre go pour merger.

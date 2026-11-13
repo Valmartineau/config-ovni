@@ -115,7 +115,7 @@ Elle parle, Claude répond à voix haute, dans le terminal.
 Demande-lui en une phrase : quelle voie elle garde, et pourquoi. Note-le dans
 `progression.md`. Question de compréhension.
 Pour aller plus loin, si elle le demande : changer la voix (`say -v '?'` liste les
-voix), changer la consigne (`CONSIGNE` dans le script), ou le chapitre 11 du manuel
+voix), changer la consigne (`CONSIGNE` dans le script), ou l'étape 4 du manuel
 Config OVNI (le bouton Dicter dans Claude Code).
 
 ## Pannes fréquentes

@@ -9,6 +9,8 @@ du kit au moins jusqu'à l'étape 2 (skills copiés).
 ## 1. Le contrat de permission (10 min)
 
 Dans un dossier vide : `mkdir essai && cd essai && claude`.
+Regardez la ligne du bas. Si elle affiche `auto mode on`, appuyez sur `Maj+Tab` jusqu'à
+lire `manual mode on` : en mode auto, Claude ne poserait pas la question.
 Demandez : « crée un fichier bonjour.txt qui contient la date du jour ».
 
 - Claude **demande** avant d'écrire. Répondez oui pour cette fois.
@@ -16,7 +18,8 @@ Demandez : « crée un fichier bonjour.txt qui contient la date du jour ».
 - Demandez : « supprime-le ». Claude demande encore. Répondez non.
 - ✅ Réussi si le fichier existe toujours et que Claude a respecté votre non.
 
-Ce que vous avez appris : Claude ne fait rien sans vous, et un non est un non.
+Ce que vous avez appris : en mode manuel, Claude ne fait rien sans vous, et un non est
+un non. Le mode auto, lui, laisse un second modèle décider : voir `tuto/00_demarrer.md`.
 
 ## 2. Votre mémoire utilisateur (10 min)
 

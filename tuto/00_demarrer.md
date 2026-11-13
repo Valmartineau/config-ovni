@@ -55,14 +55,61 @@ La première fois, un navigateur s'ouvre pour vous connecter. Ensuite :
 
 ## Les permissions
 
-Par défaut, Claude Code **demande** avant d'écrire un fichier ou de lancer une commande.
+En **mode manuel**, Claude Code **demande** avant d'écrire un fichier ou de lancer une commande.
 Trois réponses possibles : oui pour cette fois, oui pour toujours dans ce projet, non.
+Depuis la version 2.1.283, une session démarre en **mode auto** : voir plus bas.
 
 Ce que vous autorisez « pour toujours » s'écrit dans `.claude/settings.json` du projet
 (ou `~/.claude/settings.json` pour toute la machine) sous `permissions.allow`.
 Il existe aussi `permissions.deny` : ce que Claude ne pourra **jamais** faire, même
 si vous cliquez oui par erreur. Exemple utile : interdire la lecture d'un dossier
 personnel. Voir `modeles/settings.exemple.json`.
+
+### Les modes de permission
+
+Le mode dit ce que Claude peut faire **sans vous demander**. Il est écrit sur la ligne
+du bas. `Maj+Tab` passe de l'un à l'autre.
+
+| Mode | Ligne du bas | Ce qui passe sans question |
+|---|---|---|
+| Manuel (`default`) | `manual mode on` | Les lectures |
+| Modifications acceptées (`acceptEdits`) | `accept edits on` | Les lectures et les modifications de fichiers |
+| Plan (`plan`) | `plan mode on` | Les lectures ; Claude propose un plan, sans rien modifier |
+| Auto (`auto`) | `auto mode on` | Presque tout, sous le contrôle d'un second modèle |
+
+**Le mode auto.** Un second modèle, le **classifieur**, examine chaque action avant
+qu'elle parte, à votre place. Les lectures et les modifications dans le dossier de travail
+passent directement. Depuis Claude Code 2.1.283, c'est le mode de **départ** dans le
+terminal et dans VS Code, sur toutes les offres.
+
+- **Bloqué par défaut** : télécharger puis exécuter du code (`curl | bash`), envoyer des
+  données sensibles vers l'extérieur, déployer en production, `git push --force`,
+  `git reset --hard`, détruire des fichiers qui existaient avant la session.
+- **Laissé passer** : le travail dans le dossier, l'installation des dépendances déclarées,
+  les requêtes en lecture seule, et **le `git push` vers le dépôt où vous travaillez**.
+- **Après 3 blocages de suite ou 20 dans la session**, le mode auto se met en pause et
+  Claude recommence à demander.
+- Vos règles `deny` et `ask`, et vos hooks, s'appliquent **avant** le classifieur.
+
+Trois choses à retenir :
+
+1. Le mode auto **réduit les questions, il ne garantit pas la sécurité**. Pour un geste
+   sensible, repassez en manuel avec `Maj+Tab`.
+2. La règle du collectif « rien ne sort sans votre accord » n'est plus tenue par l'outil
+   pour le `push`. Pour garder la question, ajoutez dans `~/.claude/settings.json` :
+
+   ```json
+   { "permissions": { "ask": ["Bash(git push *)", "Bash(gh pr create *)"] } }
+   ```
+
+3. Pour démarrer toujours en manuel : `"permissions": { "defaultMode": "default" }` dans
+   `~/.claude/settings.json`. La valeur `"auto"` n'est lue que dans ce fichier, pas dans
+   le `.claude/settings.json` d'un projet.
+
+Ce qui sort : en mode auto, le classifieur reçoit vos messages, les actions demandées et
+le contenu de votre `CLAUDE.md`. Il tourne chez Anthropic, comme Claude.
+
+Source : <https://code.claude.com/docs/en/permission-modes>, lue le 13/11/2026.
 
 ## Les fichiers de Claude Code
 

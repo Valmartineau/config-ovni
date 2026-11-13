@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 2ee80b0). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
 
 # 8. En cas de panne
 
@@ -25,8 +25,8 @@ Premier réflexe : `python3 outils/verifier.py` puis `claude doctor`. Si vous de
 
 | Ce que vous voyez | Ce qu'il faut faire |
 |---|---|
-| Hermes répond « context too small » ou coupe ses réponses | Le modèle n'a pas reçu ses 65536 jetons de mémoire de travail. Refaites l'étape 3, puis vérifiez que model.default vaut agent-local. |
+| Hermes répond « context too small » ou coupe ses réponses | Le modèle n'a pas reçu ses 65536 jetons de mémoire de travail. Refaites le geste 3 (lui donner de la place), puis vérifiez que model.default vaut agent-local. |
 | « connection refused » sur localhost:11434 | Ollama ne tourne pas. Sur Mac et Windows, ouvrez l'application Ollama. Sur Linux : ollama serve dans un autre terminal. |
 | Tout est très lent, le ventilateur souffle | Le modèle est trop gros pour la machine. ollama ps doit afficher 100% GPU. Sinon, prenez le palier du dessous. |
 | hermes : commande introuvable | Fermez et rouvrez le terminal. Sur Mac et Linux, vérifiez que ~/.local/bin est dans le PATH, comme pour Claude Code. |
-| L'assistant de Hermes s'ouvre à l'installation | Choisissez « Custom endpoint », adresse http://localhost:11434/v1, modèle agent-local. Ou quittez-le : l'étape 6 fait le même réglage. |
+| L'assistant de Hermes s'ouvre à l'installation | Choisissez « Custom endpoint », adresse http://localhost:11434/v1, modèle agent-local. Ou quittez-le : le geste 5 (brancher Hermes) fait le même réglage. |

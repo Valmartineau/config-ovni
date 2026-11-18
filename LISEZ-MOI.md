@@ -48,7 +48,8 @@ Claude récupère la nouvelle version, montre ce qui a changé et propose chaque
 `05_obsidian` → `06_google` → `07_micom` → `08_plugins` → `09_methode` →
 `10_sessions` (plusieurs Claude en parallèle, le menu agent view, le plein écran) →
 `11_pannes` (à garder sous la main) → `12_parcours-premiere-heure` (à faire, pas à lire) →
-`13_sous-agents` → `14_memoire-automatique` → `15_claude-p` → `16_regles-par-chemin` → `glossaire`.
+`13_sous-agents` → `14_memoire-automatique` → `15_claude-p` → `16_regles-par-chemin` →
+`17_boucles` (faire travailler Claude sans le relancer : `/loop`, `/porte`, `claude -p` planifié) → `glossaire`.
 
 **En cas de doute à n'importe quel moment :** `python3 outils/verifier.py`.
 

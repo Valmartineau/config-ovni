@@ -15,6 +15,15 @@ Vous aviez cloné le kit avec git ? Ouvrez `claude` dans ce dossier et dites
 
 ## Journal des versions
 
+### 2026-11-18 : les boucles
+
+- **`tuto/17_boucles.md`** : faire travailler Claude **sans le relancer**. Trois niveaux :
+  `/loop` (il revérifie tout seul), `/porte` (il construit seul, vous jugez),
+  `claude -p` planifié (il tourne sans session). Et les quatre questions à se poser avant.
+- **Glossaire** : entrée « Boucle ».
+
+Rien à installer. Aucun de vos réglages n'est modifié.
+
 ### 2026-11-13 : le mode auto
 
 - **`tuto/00_demarrer.md`** : les modes de permission, et le **mode auto**, devenu le mode

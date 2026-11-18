@@ -79,6 +79,9 @@ Les tâches `/loop` vivent dans la session (7 jours max) et s'arrêtent avec ell
 sauf si vous la passez en arrière-plan (←). Pour une vraie planification sans
 session ouverte : cron ou launchd avec `claude -p`.
 
+Les trois façons de faire tourner Claude seul, et les quatre questions à se poser
+avant : `17_boucles`.
+
 ## Exercice
 
 1. `claude -p "Compte les fichiers markdown de ce dossier" --allowedTools "Bash(ls *),Bash(find *)"`.

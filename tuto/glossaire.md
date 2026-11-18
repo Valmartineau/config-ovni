@@ -2,6 +2,10 @@
 
 - **Agent** : programme qui enchaîne lui-même lecture, décision, action, avec un modèle
   de langage aux commandes. Claude Code en est un.
+- **Boucle** : Claude recommence seul : il agit, regarde le résultat, continue ou s'arrête.
+  Trois niveaux : `/loop` (dans la session), `/porte` (en une traite, dans un worktree),
+  `claude -p` planifié (sans session). Toujours avec une condition d'arrêt et un plafond.
+  Voir `tuto/17_boucles.md`.
 - **CLAUDE.md** : fichier d'instructions lu au démarrage de chaque session. Existe à
   plusieurs niveaux (utilisateur, projet, sous-dossier), concaténés.
 - **Contexte (fenêtre de)** : tout ce que le modèle « voit » : vos messages, ses réponses,

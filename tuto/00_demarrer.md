@@ -124,6 +124,12 @@ Source : <https://code.claude.com/docs/en/permission-modes>, lue le 13/11/2026.
 | `<projet>/.claude/` | Settings et skills du projet |
 | `<projet>/.mcp.json` | Serveurs MCP partagés avec l'équipe |
 
+## Avant d'aller plus loin : savoir prompter
+
+Claude Code fait ce que vos mots disent, pas ce que vous pensiez. La fiche suivante,
+`00b_savoir-prompter`, explique comment on constitue un prompt : rôle, contexte, tâche,
+contraintes, format. Dix minutes qui changent tout le reste.
+
 ## Le kit, maintenant
 
 Ouvrez un terminal dans le dossier du kit et lancez `claude`. Le fichier `CLAUDE.md`

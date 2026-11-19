@@ -22,6 +22,11 @@
 - **Permission (allow / deny)** : règles dans `settings.json`. `deny` gagne toujours.
 - **Porte** (skill du kit) : autonomie bornée ; Claude code seul dans un worktree, sans
   réseau ni action sortante, et attend votre go pour merger.
+- **Prompt** : le texte que vous donnez au modèle. Cinq blocs : rôle, contexte, tâche,
+  contraintes, format. Voir `tuto/00b_savoir-prompter.md`.
+- **Prompt engineering** : l'art de formuler pour une machine qui prend les mots à la
+  lettre. Une compétence de pensée, pas de code.
+- **Prompt retourné** : demander au modèle de poser les questions qui lui manquent, une à la fois.
 - **Quota 5 h / 7 j** : fenêtres glissantes de consommation des offres Claude. Visibles
   dans la status line.
 - **Scope (OAuth)** : périmètre de droits accordé à une application (lecture agenda,

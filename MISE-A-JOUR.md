@@ -15,6 +15,16 @@ Vous aviez cloné le kit avec git ? Ouvrez `claude` dans ce dossier et dites
 
 ## Journal des versions
 
+### 2026-11-19 : savoir prompter
+
+- **`tuto/00b_savoir-prompter.md`** : la **première brique d'apprentissage**. Le prompt
+  comme nouvelle façon d'utiliser le langage : les cinq blocs (rôle, contexte, tâche,
+  contraintes, format), ce qui compte dans le contexte, la question, le prompt retourné,
+  et où ranger un prompt qui marche. Tiré de la conférence « Penser avec les machines ».
+- **Glossaire** : entrées « Prompt », « Prompt engineering », « Prompt retourné ».
+
+Rien à installer. Aucun de vos réglages n'est modifié.
+
 ### 2026-11-18 : les boucles
 
 - **`tuto/17_boucles.md`** : faire travailler Claude **sans le relancer**. Trois niveaux :

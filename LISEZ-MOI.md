@@ -44,7 +44,8 @@ Claude récupère la nouvelle version, montre ce qui a changé et propose chaque
 
 ## Ordre de lecture conseillé
 
-`00_demarrer` → `01_claude-md` → `02_skills` → `03_hooks` → `04_mcp` →
+`00_demarrer` → `00b_savoir-prompter` (la première brique : comment on constitue un prompt) →
+`01_claude-md` → `02_skills` → `03_hooks` → `04_mcp` →
 `05_obsidian` → `06_google` → `07_micom` → `08_plugins` → `09_methode` →
 `10_sessions` (plusieurs Claude en parallèle, le menu agent view, le plein écran) →
 `11_pannes` (à garder sous la main) → `12_parcours-premiere-heure` (à faire, pas à lire) →

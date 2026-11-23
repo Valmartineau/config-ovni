@@ -5,10 +5,10 @@ description: Use quand l'utilisateur veut passer un projet (le sien ou celui d'u
 
 # $boussole — la boussole systémique de conduite de projet
 
-Copyright (c) 2026 Valentin Martineau (OVNI Conseil) — planche « Outil systémique de conduite de projet ».
+Copyright (c) 2026 Valentin Martineau (OVNI Conseil) — auteur de la planche « Outil systémique de conduite de projet ».
 
-Filiation : recherches d'Alain Findeli en théorie du design, travaux de Brigitte
-Borja de Mozota en management du design, collectif BAM.
+L'outil s'appuie sur les travaux du collectif BAM et sur les recherches d'Alain
+Findeli, avec le regard de Benjamin Bosc et de Brigitte Borja de Mozota.
 
 **Principe : un projet se tient quand ce qui est conçu dedans rejoint ce qui est
 reçu dehors.** La boussole ne donne pas de solution. Elle montre où regarder.

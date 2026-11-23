@@ -1,6 +1,6 @@
 # Les questions de la boussole — deux prismes, 14 dimensions, deux vigilances
 
-Copyright (c) 2026 Valentin Martineau (OVNI Conseil) — planche « Outil systémique de conduite de projet ».
+Copyright (c) 2026 Valentin Martineau (OVNI Conseil) — auteur de la planche « Outil systémique de conduite de projet ».
 
 Questions reprises telles quelles. Ne pas en ajouter, ne pas en reformuler.
 

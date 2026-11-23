@@ -27,7 +27,7 @@ with tempfile.TemporaryDirectory() as tmp:
 
     # Skills : en-tête réduit à name + description, appel explicite dans openai.yaml.
     noms = sorted(p.name for p in (CODEX / "skills").iterdir())
-    assert len(noms) == 9 and "fermer-sessions" not in noms and "statusline-aide" not in noms, noms
+    assert len(noms) == 10 and "fermer-sessions" not in noms and "statusline-aide" not in noms, noms
     for n in noms:
         t = (CODEX / "skills" / n / "SKILL.md").read_text(encoding="utf-8")
         tete = t.split("\n---\n", 1)[0].splitlines()[1:]
@@ -78,4 +78,4 @@ with tempfile.TemporaryDirectory() as tmp:
     # L'auto-diagnostic tourne sur une machine vide sans planter (code 1 attendu : rien d'installé).
     r = lancer(CODEX / "outils" / "verifier.py", "", tmp / "vide")
     assert r.returncode == 1 and "Traceback" not in r.stderr, r.stderr
-    print(f"✅ test_vers_codex : 9 skills, 3 hooks exercés, réglages relus, zip de {len(noms_zip)} fichiers")
+    print(f"✅ test_vers_codex : 10 skills, 3 hooks exercés, réglages relus, zip de {len(noms_zip)} fichiers")

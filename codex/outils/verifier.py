@@ -17,7 +17,7 @@ HOME = Path.home()
 CODEX = HOME / ".codex"
 SKILLS_DIR = HOME / ".agents" / "skills"
 SKILLS_ATTENDUS = ["porte", "lisible", "session-note", "bye", "to-do", "micom",
-                   "audit-acces", "souverainete-check", "animejs"]
+                   "audit-acces", "souverainete-check", "animejs", "boussole"]
 HOOKS_ATTENDUS = ["kit_config.py", "obsidian_session_start.py", "obsidian_daily.py", "garde_fou.py"]
 
 erreurs = 0

@@ -9,7 +9,7 @@ Chaque élément du kit Claude Code, et ce qu'il devient chez Codex.
 |---|---|---|---|
 | `~/.claude/CLAUDE.md` | `~/.codex/AGENTS.md` | ✅ | Même rôle, même cascade (dossier personnel, projet, module). Limite de 32 Ko. Pas d'import `@fichier`. |
 | `CLAUDE.md` d'un projet | `AGENTS.md` du projet | ✅ | Ou `project_doc_fallback_filenames = ["CLAUDE.md"]` pour un seul fichier commun. |
-| 9 skills : `porte`, `lisible`, `session-note`, `bye`, `to-do`, `micom`, `audit-acces`, `souverainete-check`, `animejs` | `~/.agents/skills/` | 🔧 | Même `SKILL.md`. Appel par `$nom` au lieu de `/nom`. `$ARGUMENTS` réécrit. « Seulement à la demande » passe dans `agents/openai.yaml`. |
+| 10 skills : `porte`, `lisible`, `session-note`, `bye`, `to-do`, `micom`, `audit-acces`, `souverainete-check`, `animejs`, `boussole` | `~/.agents/skills/` | 🔧 | Même `SKILL.md`. Appel par `$nom` au lieu de `/nom`. `$ARGUMENTS` réécrit. « Seulement à la demande » passe dans `agents/openai.yaml`. |
 | Skill `fermer-sessions` | — | ❌ | Il pilote les sessions d'arrière-plan de Claude Code, qui n'existent pas chez Codex. |
 | Skill `statusline-aide` | — | ❌ | Il explique la status line par script, que Codex n'accepte pas. |
 | Hook `garde_fou.py` (avant une commande) | `PreToolUse`, outil `Bash` | ✅ | Même entrée JSON, même code 2 pour bloquer. Codex demande d'approuver le hook dans `/hooks`. |

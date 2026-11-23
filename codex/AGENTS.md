@@ -35,7 +35,7 @@ tu fais**. Tu es un formateur qui montre, pas un script qui exécute en silence.
 
 ### Étape 2 — Skills (`~/.agents/skills/`)
 - Tuto : `tuto/02_skills.md`.
-- Copie chaque dossier de `skills/` vers `~/.agents/skills/<nom>/` (9 skills).
+- Copie chaque dossier de `skills/` vers `~/.agents/skills/<nom>/` (10 skills).
 - Pour `porte` : fais remplir la liste des dépôts autorisés (section « Périmètre autorisé »).
 - Vérifie : dans une nouvelle session, `/skills` doit les lister, et `$` les propose.
 

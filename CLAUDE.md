@@ -76,7 +76,7 @@ Déclencheurs : « mets à jour le kit », « mise à jour Config OVNI », ou le
 - Tuto : `tuto/02_skills.md`.
 - Copie chaque dossier de `skills/` vers `~/.claude/skills/<nom>/`. Liste : porte,
   lisible, session-note, bye, to-do, micom, statusline-aide, audit-acces,
-  souverainete-check, fermer-sessions, animejs.
+  souverainete-check, fermer-sessions, animejs, boussole.
 - Pour `porte` : ouvre `~/.claude/skills/porte/SKILL.md` et fais-lui remplir la
   liste des dépôts autorisés (section « Périmètre autorisé »).
 - Vérifie : dans une nouvelle session, `/` doit lister ces skills.

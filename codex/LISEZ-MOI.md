@@ -18,7 +18,7 @@ sans aucune donnée personnelle.
 | `INVENTAIRE.md` | Ce qui passe tel quel, ce qui est adapté, ce qui ne passe pas |
 | `tuto/` | Installer Codex, AGENTS.md, skills, hooks, réglages et MCP, sous-agents, Obsidian |
 | `outils/verifier.py` | L'auto-diagnostic : ✅ / ❌ et la commande qui répare |
-| `skills/` | 9 skills, à copier dans `~/.agents/skills/` |
+| `skills/` | 10 skills, à copier dans `~/.agents/skills/` |
 | `hooks/` | 3 hooks Python, à copier dans `~/.codex/hooks/` |
 | `agents/` | Le sous-agent relecteur, au format TOML |
 | `modeles/` | AGENTS.md personnel, `config.toml` commenté, `hooks.json`, règles, charte Micom |

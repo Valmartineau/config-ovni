@@ -20,7 +20,7 @@ RACINE = Path(__file__).resolve().parent.parent
 CODEX = RACINE / "codex"
 
 SKILLS = ["porte", "lisible", "session-note", "bye", "to-do", "micom",
-          "audit-acces", "souverainete-check", "animejs"]
+          "audit-acces", "souverainete-check", "animejs", "boussole"]
 # Exclus : fermer-sessions (sessions d'arrière-plan de Claude Code),
 # statusline-aide (Codex n'accepte pas de status line par script).
 

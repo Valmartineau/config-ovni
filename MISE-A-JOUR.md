@@ -15,6 +15,21 @@ Vous aviez cloné le kit avec git ? Ouvrez `claude` dans ce dossier et dites
 
 ## Journal des versions
 
+### 2026-11-23 : la boussole de conduite de projet
+
+- **`skills/boussole/`** : nouveau skill. `/boussole` passe un projet à la **boussole
+  systémique de conduite de projet** : ce qui est **conçu** dedans, ce qui est **reçu**
+  dehors, et les angles morts entre les deux. Deux prismes (Business, Design), trois
+  couches (éthique, culture, logique).
+- Deux formats : **allégée** par défaut (7 lignes, 8 questions, une vigilance) et
+  **complète** (`/boussole complète` : 14 dimensions, trois vigilances, épreuve du soin).
+- Elle pose des questions et montre des écarts. Elle ne décide pas à votre place.
+- Version Codex : `codex/skills/boussole/` (appel par `$boussole`).
+
+À installer : copier `skills/boussole/` dans `~/.claude/skills/`. Aucun de vos réglages
+n'est modifié. Ce que vous décrivez de votre projet part chez Anthropic, comme toute
+conversation avec Claude : rien d'autre ne sort.
+
 ### 2026-11-19 : savoir prompter
 
 - **`tuto/00b_savoir-prompter.md`** : la **première brique d'apprentissage**. Le prompt

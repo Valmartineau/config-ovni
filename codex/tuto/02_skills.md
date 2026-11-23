@@ -31,10 +31,10 @@ Attention : **ce n'est pas `~/.codex/skills`**. Codex lit `~/.agents/skills`.
 Les skills du kit sont déjà convertis. Pour les vôtres : `outils/vers_codex.py`
 du dépôt config-ovni montre la conversion.
 
-## Les 9 skills du kit
+## Les 10 skills du kit
 
 `porte`, `lisible`, `session-note`, `bye`, `to-do`, `micom`, `audit-acces`,
-`souverainete-check`, `animejs`.
+`souverainete-check`, `animejs`, `boussole`.
 
 `porte`, `bye`, `micom` et `lisible` ne se lancent **que si vous les appelez** :
 ils agissent ou changent la façon d'écrire.

@@ -46,10 +46,14 @@ sensible (milieu) · **L** = logique, économie, logistique (centre) ·
 | 10 | Utilités | L | Quel rôle de chaque partie prenante ? | Quelle affordance ? | Besoin client |
 | 11 | Émotions | C | Quels ressentis des parties prenantes ? | Quels ressentis des utilisateurs ? | Marque |
 | 12 | Usages | C | Quelles sont les expériences perçues par les acteurs ? | Quelle ergonomie ? | Parcours client |
-| 13 | Expériences | É | Quels retours utilisateur ? | Quels sont les types de comportements observés ? | Expériences |
-| 14 | Pratiques | É | Quels sont les types de conduite recherchés ? | Quels sont les retours d'expérience (avis client, etc.) ? | Relation client |
+| 13 | Expériences | É | Quels sont les types de conduite recherchés ? | Quels sont les types de comportements observés ? | Expériences |
+| 14 | Pratiques | É | Quels retours utilisateur ? | Quels sont les retours d'expérience (avis client, etc.) ? | Relation client |
 
 ## Souci et expérience
 
 **Conception = expérience du souci. Réception = souci de l'expérience.**
 Vaut pour les deux prismes.
+
+**Lignes 13 et 14 du prisme Design** : les deux questions de conception sont
+échangées par rapport à la planche d'origine, pour suivre le prisme Business
+(la conduite recherchée face au comportement observé, sur la ligne Expériences).

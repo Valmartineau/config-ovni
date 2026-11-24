@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site a9c0064). Ne pas modifier à la main : relancer le script. -->
 
 # 9. Le parcours guidé de NOVI, en texte
 
@@ -213,9 +213,9 @@ Chaque session terminée peut devenir une note dans votre vault Obsidian. Votre 
 
 ## Bibliothèque
 
-**11 skills : 3 hooks, 1 sous-agent, tous audités**
+**12 skills : 3 hooks, 1 sous-agent, tous audités**
 
-Notre bibliothèque est petite. Onze skills, trois hooks, un sous-agent. Tous audités.
+Notre bibliothèque est petite. Douze skills, trois hooks, un sous-agent. Tous audités.
 
 **Nettoyer : Chemins, noms, comptes et clés**
 

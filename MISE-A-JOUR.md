@@ -15,6 +15,14 @@ Vous aviez cloné le kit avec git ? Ouvrez `claude` dans ce dossier et dites
 
 ## Journal des versions
 
+### 2026-11-24 : la boussole corrigée, le manuel à jour
+
+- **`skills/boussole/questions.md`** : en prisme Design, les questions de conception des
+  lignes Expériences et Pratiques sont remises dans l'ordre du prisme Business.
+- **`manuel/`** : la bibliothèque liste `/boussole` ; douze skills dans le kit.
+
+Pour l'avoir : recopier `skills/boussole/questions.md`. Aucun de vos réglages n'est modifié.
+
 ### 2026-11-23 : la boussole de conduite de projet
 
 - **`skills/boussole/`** : nouveau skill. `/boussole` passe un projet à la **boussole

@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site a9c0064). Ne pas modifier à la main : relancer le script. -->
 
 # 3. Installer pas à pas
 
@@ -21,7 +21,7 @@ Il faut une offre Claude Pro, Max, Team ou Enterprise. Le plan gratuit ne donne 
 
 1. **État des lieux** : Claude regarde votre système, vos outils et ce qui existe déjà. Il dit ce qu'il va installer et où.
 2. **Mémoire** : Votre ~/.claude/CLAUDE.md : prénom, langue, méthode de travail.
-3. **Skills** : Onze dossiers copiés dans ~/.claude/skills/. Ils apparaissent dans la liste / en nouvelle session.
+3. **Skills** : Douze dossiers copiés dans ~/.claude/skills/. Ils apparaissent dans la liste / en nouvelle session.
 4. **Hooks** : Les trois hooks, branchés après une sauvegarde de settings.json, et testés à la main.
 5. **Status line** : La ligne du bas : modèle, contexte, quota.
 6. **Obsidian** : Votre vault, créé ou complété. Le test : une ligne apparaît dans la note du jour.

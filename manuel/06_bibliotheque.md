@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site a9c0064). Ne pas modifier à la main : relancer le script. -->
 
 # 6. Notre bibliothèque
 
@@ -17,6 +17,7 @@ Peu d'éléments, tous audités. Chaque fiche dit ce qui sort de votre machine, 
 | `/souverainete-check` | Cartographie ce qui sort quand vous branchez un service. | Le descriptif donné part chez Anthropic. |
 | `/fermer-sessions` | Aide à fermer les sessions en arrière-plan. | Agit sur les sessions locales. |
 | `/animejs` | Écrit et relit des animations anime.js version 4. | Un CDN serait un appel tiers : préférez le local. |
+| `/boussole` | Passe un projet à la boussole : ce qui est conçu, ce qui est reçu, les angles morts. | La description du projet part chez Anthropic. |
 
 
 ## Comment un élément entre dans la bibliothèque

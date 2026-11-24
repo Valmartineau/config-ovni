@@ -1,4 +1,4 @@
-<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site 9def6d9). Ne pas modifier à la main : relancer le script. -->
+<!-- Produit par outils/depuis_le_site.py à partir de la page Config OVNI (site a9c0064). Ne pas modifier à la main : relancer le script. -->
 
 # 8. En cas de panne
 
